@@ -1,1 +1,2 @@
 ---
+bolt_ssh::target::script_basedir: '/usr/local/bin'

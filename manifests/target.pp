@@ -8,6 +8,7 @@
 class bolt_ssh::target
 (
   String $user,
+  String $script_basedir,
   String $ssh_public_key,
   String $ssh_public_key_type
 )
