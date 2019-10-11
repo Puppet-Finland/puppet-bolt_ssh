@@ -13,7 +13,7 @@ class bolt_ssh::controller
   Optional[String] $ssh_private_key_content = undef,
   Optional[String] $ssh_private_key_source = undef,
 
-) inherits bolt_ssh::params
+)
 {
 
   case $::osfamily {
