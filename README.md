@@ -27,13 +27,13 @@ On Bolt controllers this module manages:
 * Puppet Bolt installation from Puppetlabs' puppet-tools-release repositories
 * Installing the private SSH key used to connect to target nodes
 * Optional features
- * Setting up and keeping a PuppetDB-based inventory up-to-date
+    * Setting up and keeping a PuppetDB-based inventory up-to-date
 
 On target hosts the following things are managed:
 
 * Adding the public SSH key to the authorized_keys file of the specified user
 * Optional features
- * Add sudo rules and wrapper scripts to limit the privileges of the user on target servers
+    * Add sudo rules and wrapper scripts to limit the privileges of the user on target servers
 
 ### Setup Requirements
 
