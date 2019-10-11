@@ -13,6 +13,7 @@ define bolt_ssh::sudocommand
 {
   file { "${script_basedir}/${title}":
     ensure  => $ensure,
+    content => $script_content,
     owner   => 'root',
     group   => 'root',
     mode    => '0755',
