@@ -28,6 +28,10 @@ class bolt_ssh::controller
           server => 'keyserver.ubuntu.com',
         }
       }
+      package { 'puppet-bolt':
+        ensure  => 'present',
+        require => Apt::Source['puppet-tools-release'],
+      }
     }
   }
 
