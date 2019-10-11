@@ -6,12 +6,13 @@
 #   bolt_ssh::sudocommand { 'namevar': }
 define bolt_ssh::sudocommand
 (
-  String $script_content,
-  String $script_basedir = $::bolt_ssh::target::script_basedir,
+  String                   $script_content,
+  String                   $script_basedir = $::bolt_ssh::target::script_basedir,
+  Enum['present','absent'] $ensure = 'present'
 )
 {
   file { "${script_basedir}/${title}":
-    ensure  => 'present',
+    ensure  => $ensure,
     user    => 'root',
     group   => 'root',
     mode    => '0755',
