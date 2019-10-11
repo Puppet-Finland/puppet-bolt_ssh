@@ -51,7 +51,10 @@ TODO
 
 ## Limitations
 
-This module does not manage local system users on the controller or target nodes.
+There are a couple of limitations:
+
+* Local system users are not managed on the controller or target nodes
+* Controller setup is only supported for Debian derivatives; adding support for RedHat or other platforms would be fairly easy.
 
 ## Development
 

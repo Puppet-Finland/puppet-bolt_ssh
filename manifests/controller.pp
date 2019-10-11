@@ -33,6 +33,7 @@ class bolt_ssh::controller
         require => Apt::Source['puppet-tools-release'],
       }
     }
+    default: { fail('Currently ::bolt_ssh::controller class only works on Debian derivatives!') }
   }
 
   # The root user requires special treatment
